@@ -46,3 +46,26 @@
     font-size: 1.125rem;
 
 }
+
+.btn[aria-label] {
+
+    position: relative;
+    
+    &::before {
+       content: ""; 
+       position: absolute;
+       border-radius: inherit;
+       inset: 1.5px;
+       background-color: var(--bg-color);
+    }
+
+    &::after {
+       content: attr(aria-label); /* attr() função que pega um atributo*/
+       background: var(--btn-bg-color);
+       -webkit-background-clip: text;
+       background-clip: text; /* faz o recorte conforme o texto*/
+       color: transparent;
+       position: relative;
+       z-index: 1;
+    }
+}
