@@ -100,6 +100,13 @@ ul [role="list"] {
     list-style: none;
 
 }
+
+img {
+    max-width: 100%;
+    display: inline-block;
+
+}
+
 @media (width >= 80em) {  /* se largura for maior ou igual que 1280px ou 80em: mudar tamanho das fontes*/
     :root {
     --fs-lg: 2rem;
