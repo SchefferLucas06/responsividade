@@ -18,6 +18,7 @@
 
     & .card:nth-child(1) {
         grid-column: 1/2;
+        border: 1px solid red;
     }
 
     & .card:nth-child(2) {
