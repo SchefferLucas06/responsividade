@@ -1,0 +1,39 @@
+#download {
+    .card {
+      
+        padding: 3rem 1.5rem 15rem; /* posionamento absoluto não aumenta o card por isso 15rem de fundo/ altura do card*/
+        position: relative;
+
+        & > img { /* card, primeiro nivel de img*/
+            width: 14.5rem;
+            position: absolute;
+            bottom: 0;
+            right: -3.5rem
+        };
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    @media ( width >= 80em) {
+        .card {
+            padding: 8.5rem 5rem;
+
+            & .dog {
+                width: 40rem;
+                
+                
+                
+            }
+
+            & > img {
+                width: 29.125rem;
+            }
+        }
+    }
+
+    
+
+}

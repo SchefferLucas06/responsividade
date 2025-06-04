@@ -1,8 +1,31 @@
 #about {
     background-color: var(--surface-color);
-    border: 1px solid red;
+    
 
     & .even-columns {
         gap: 2rem;
+    }
+
+    @media (width >=80em) {
+
+        & .container {
+       
+        display: grid;
+        grid-template-columns: 40rem 34rem;
+        gap: 1.5rem;
+        
+        & .picture {
+            img {
+                
+               width: 34rem; 
+            }
+        }
+    }
+
+        & .toggle {
+           
+            width: 40rem;
+
+        }
     }
 }
